@@ -4,10 +4,5 @@ function takeANumber(katzDeliLine,name) {katzDeliLine.push (name); return `Welco
 
 function nowServing(array) {if (array.length>0) {var output=[]; output=array.shift(1); return `Currently serving ${output}.`} else {return "There is nobody waiting to be served!";}}
 
-function currentLine(katzDeliLine) {
-  let count=0; var output=[]; 
-  while (count<katzDeliLine.length) {output.push (`${count+1}. ${katzDeliLine[count]}`); ++count}
-  return `The line is currently: ${output}`;}
-  
-  function theLine(katzDeliLine) {if (katzDeliLine.length===0) {return "The line is currently empty."} else if (katzDeliLine.length>0) {let count=0; var output=[]; while (count<katzDeliLine.length) {output.push (` ${count+1}. ${katzDeliLine[count]}`); ++count} return `The line is currently:${output}`}}
+function currentLine(katzDeliLine) {if (katzDeliLine.length===0) {return "The line is currently empty."} else if (katzDeliLine.length>0) {let count=0; var output=[]; while (count<katzDeliLine.length) {output.push (` ${count+1}. ${katzDeliLine[count]}`); ++count} return `The line is currently:${output}`}}
   
